@@ -285,9 +285,9 @@ async def urban_dict(ud_e):
         await ud_e.edit("No result found for **" + query + "**")
 
 
-@register(outgoing=True, pattern=r"^.tts(?: |$)([\s\S]*)")
+@register(outgoing=True, pattern=r"^.tt(?: |$)([\s\S]*)")
 async def text_to_speech(query):
-    """ For .tts command, a wrapper for Google Text-to-Speech. """
+    """ For .tt command, a wrapper for Google Text-to-Speech. """
     textx = await query.get_reply_message()
     message = query.pattern_match.group(1)
     if message:
@@ -414,9 +414,9 @@ async def imdb(e):
         await e.edit("Plox enter **Valid movie name** kthx")
 
 
-@register(outgoing=True, pattern=r"^.trt(?: |$)([\s\S]*)")
+@register(outgoing=True, pattern=r"^.tr(?: |$)([\s\S]*)")
 async def translateme(trans):
-    """ For .trt command, translate the given text using Google Translate. """
+    """ For .tr command, translate the given text using Google Translate. """
     translator = Translator()
     textx = await trans.get_reply_message()
     message = trans.pattern_match.group(1)
@@ -712,7 +712,7 @@ CMD_HELP.update(
         \nUsage: Does a search on Urban Dictionary.'})
 CMD_HELP.update({
     'tts':
-    '.tts <text> [or reply]\
+    '.tt <text> [or reply]\
         \nUsage: Translates text to speech for the language which is set.\nUse .lang tts <language code> to set language for tts. (Default is English.)'
 })
 CMD_HELP.update({
