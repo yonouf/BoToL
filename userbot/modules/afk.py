@@ -16,12 +16,12 @@ from userbot.events import register
 
 # ========================= CONSTANTS ============================
 AFKSTR = [
-    "I'm busy right now. Please talk in a bag and when I come back you can just give me the bag!",
-    "I'm away right now. If you need anything, leave a message after the beep:\n`beeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeep`!",
-    "You missed me, next time aim better.",
-    "I'll be back in a few minutes and if I'm not...,\nwait longer.",
-    "I'm not here right now, so I'm probably somewhere else.",
-    "Roses are red,\nViolets are blue,\nLeave me a message,\nAnd I'll get back to you.",
+    "I'm Sleeping",
+    "On The Way Bro",
+    "U ask me to slap your face? ",
+    "Feeding Kitty",
+    "Watching xnxx dot com",
+    "Are U Blind ? I'm afk. Brb",
     "Sometimes the best things in life are worth waiting for…\nI'll be right back.",
     "I'll be right back,\nbut if I'm not right back,\nI'll be back later.",
     "If you haven't figured it out already,\nI'm not here.",
