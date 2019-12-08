@@ -1129,14 +1129,11 @@ CMD_HELP.update({
 \nUsage: Ooooof\
 \n\n.hi\
 \nUsage: Greet everyone!\
-\n\n.re\
-\nUsage: Make your userbot react to everything.\
-\n\n.slap\
+\n\n.sl\
 \nUsage: reply to slap them with random objects !!\
 \n\n.f <emoji/character>\
 \nUsage: Pay Respects.\
 \n\n.tp\
 \nUsage: Just a small command to make your keyboard become a typewriter!\
 \n\n.ly <query>\
-\nUsage: Let me Google that for you real quick !!\"
-})
+\nUsage: Let me Google that for you real quick !!\."})
