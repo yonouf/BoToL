@@ -93,7 +93,7 @@ async def bot_support(wannahelp):
 
 @register(outgoing=True, pattern="^.creator$")
 async def creator(e):
-    await e.edit("[TeKnoways](https://t.me/Three_Cube_TeKnoways)")
+    await e.edit("[BL4CKID](https://t.me/Three_Cube_TeKnoways)")
 
 
 @register(outgoing=True, pattern="^.readme$")
@@ -110,7 +110,7 @@ async def reedme(e):
     
 
 # Copyright (c) Gegham Zakaryan | 2019
-@register(outgoing=True, pattern="^.repeat (.*)")
+@register(outgoing=True, pattern="^.rep (.*)")
 async def repeat(rep):
     cnt, txt = rep.pattern_match.group(1).split(' ', 1)
     replyCount = int(cnt)
@@ -128,7 +128,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "Click [here](https://github.com/mkaraniya/OpenUserBot) to open OpenUserBot's GitHub page."
+        "Click [here](https://github.com/BL4CKID/BoToL) to open OpenUserBot's GitHub page."
     )
 
 
@@ -169,46 +169,10 @@ CMD_HELP.update({
 })
 
 CMD_HELP.update({
-    "shutdown":
-    ".shutdown\
-\nUsage: Sometimes you need to shut down your bot. Sometimes you just hope to\
-hear Windows XP shutdown sound... but you don't."
-})
-
-CMD_HELP.update(
-    {'support': ".support\
-\nUsage: If you need help, use this command."})
-
-CMD_HELP.update({
-    'community':
-    ".community\
-\nUsage: Join the awesome Paperplane userbot community !!"
-})
-
-CMD_HELP.update({
-    'repo':
-    '.repo\
-\nUsage: If you are curious what makes the userbot work, this is what you need.'
-})
-
-CMD_HELP.update({
-    "readme":
-    ".readme\
-\nUsage: Provide links to setup the userbot and it's modules."
-})
-
-CMD_HELP.update(
-    {"creator": ".creator\
-\nUsage: Know who created this awesome userbot !!"})
-
-CMD_HELP.update({
     "repeat":
-    ".repeat <no.> <text>\
+    ".rep <no.> <text>\
 \nUsage: Repeats the text for a number of times. Don't confuse this with spam tho."
 })
-
-CMD_HELP.update({"restart": ".restart\
-\nUsage: Restarts the bot !!"})
 
 CMD_HELP.update({
     "raw":
