@@ -132,11 +132,11 @@ async def amireallyalive(on):
 
 
 
-@register(outgoing=True, pattern="^.aliveu")
+@register(outgoing=True, pattern="^.au")
 async def amireallyaliveuser(username):
-    """ For .aliveu command, change the username in the .alive command. """
+    """ For .au command, change the username in the .alive command. """
     message = username.text
-    output = '.aliveu [new user without brackets] nor can it be empty'
+    output = '.au [new user without brackets] nor can it be empty'
     if not (message == '.aliveu' or message[7:8] != ' '):
         newuser = message[8:]
         global DEFAULTUSER
@@ -145,9 +145,9 @@ async def amireallyaliveuser(username):
     await username.edit("`" f"{output}" "`")
 
 
-@register(outgoing=True, pattern="^.resetalive$")
+@register(outgoing=True, pattern="^.res$")
 async def amireallyalivereset(ureset):
-    """ For .resetalive command, reset the username in the .alive command. """
+    """ For .res command, reset the username in the .au command. """
     global DEFAULTUSER
     DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
     await ureset.edit("`" "Successfully reset user for alive!" "`")
@@ -165,8 +165,8 @@ CMD_HELP.update({
     "on":
     ".on\
     \nUsage: Type .on to see wether your bot is working or not.\
-    \n\n.aliveu <text>\
+    \n\n.au <text>\
     \nUsage: Changes the 'user' in alive to the text you want.\
-    \n\n.resetalive\
+    \n\n.res\
     \nUsage: Resets the user to default."
 })
