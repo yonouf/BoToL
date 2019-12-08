@@ -20,7 +20,7 @@ UNAPPROVED_MSG = (
     "`HeY! This is an automated message.\n\n`"
     "`I haven't approved you to PM yet.`"
     "`Please wait for me to look in, I mostly approve PMs.\n\n`"
-    "`Until then, please don't spam my Mastor's PM, you'll get blocked and reported if you do so!`")
+    "`Until then, please don't spam my Boss's PM, you'll get blocked and reported if you do so!`")
 # =================================================================
 
 
@@ -146,9 +146,9 @@ async def notifoff(noff_event):
     await noff_event.edit("`Notifications from unapproved PM's are silenced!`")
 
 
-@register(outgoing=True, pattern="^.notifon$")
+@register(outgoing=True, pattern="^.noon$")
 async def notifon(non_event):
-    """ For .notifoff command, get notifications from unapproved PMs. """
+    """ For .noff command, get notifications from unapproved PMs. """
     try:
         from userbot.modules.sql_helper.globals import delgvar
     except AttributeError:
@@ -158,9 +158,9 @@ async def notifon(non_event):
     await non_event.edit("`Notifications from unapproved PM's unmuted!`")
 
 
-@register(outgoing=True, pattern="^.approve$")
+@register(outgoing=True, pattern="^.app$")
 async def approvepm(apprvpm):
-    """ For .approve command, give someone the permissions to PM you. """
+    """ For .app command, give someone the permissions to PM you. """
     try:
         from userbot.modules.sql_helper.pm_permit_sql import approve
     except AttributeError:
@@ -199,7 +199,7 @@ async def approvepm(apprvpm):
         )
 
 
-@register(outgoing=True, pattern="^.disapprove$")
+@register(outgoing=True, pattern="^.dis$")
 async def disapprovepm(disapprvpm):
     try:
         from userbot.modules.sql_helper.pm_permit_sql import dissprove
@@ -229,9 +229,9 @@ async def disapprovepm(disapprvpm):
         )
 
 
-@register(outgoing=True, pattern="^.block$")
+@register(outgoing=True, pattern="^.bl$")
 async def blockpm(block):
-    """ For .block command, block people from PMing you! """
+    """ For .bl command, block people from PMing you! """
     if block.reply_to_msg_id:
         reply = await block.get_reply_message()
         replied_user = await block.client.get_entity(reply.from_id)
@@ -260,9 +260,9 @@ async def blockpm(block):
         )
 
 
-@register(outgoing=True, pattern="^.unblock$")
+@register(outgoing=True, pattern="^.un$")
 async def unblockpm(unblock):
-    """ For .unblock command, let people PMing you again! """
+    """ For .un command, let people PMing you again! """
     if unblock.reply_to_msg_id:
         reply = await unblock.get_reply_message()
         replied_user = await unblock.client.get_entity(reply.from_id)
@@ -281,16 +281,16 @@ async def unblockpm(unblock):
 CMD_HELP.update({
     "pmpermit":
     "\
-.approve\
+.app\
 \nUsage: Approves the mentioned/replied person to PM.\
-\n\n.disapprove\
+\n\n.dis\
 \nUsage: Disapproves the mentioned/replied person to PM.\
-\n\n.block\
+\n\n.bl\
 \nUsage: Blocks the person.\
-\n\n.unblock\
+\n\n.un\
 \nUsage: Unblocks the person so they can PM you.\
-\n\n.notifoff\
+\n\n.noff\
 \nUsage: Clears/Disables any notifications of unapproved PMs.\
-\n\n.notifon\
+\n\n.noon\
 \nUsage: Allows notifications for unapproved PMs."
 })
