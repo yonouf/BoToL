@@ -125,8 +125,8 @@ async def amireallyalive(on):
     await on.edit("`"
                      "What The F....K \n"
                      "I'm Alive Dude \n"
-                     f"I'm on Telethon : {version.__version__} \n "
-                     f"I'm on Python : {python_version()} \n "
+                     f"I'm on Telethon : {version.__version__} \n"
+                     f"I'm on Python   : {python_version()} \n"
                      f"anything else ??? "
                      "`")    
 
