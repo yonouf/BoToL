@@ -147,7 +147,7 @@ async def gdrive_upload_function(dryb):
                                              file_name, mime_type, dryb,
                                              parent_id)
             await dryb.edit(
-                f"File:`{required_file_name}`\nwas Successfully Uploaded to ["\033[0;37;40m LINK\n"]({g_drive_link})!"
+                f"File:`{required_file_name}`\nwas Successfully Uploaded to [("\033[0;37;40m LINK\n")]({g_drive_link})!"
             )
         except Exception as e:
             await dryb.edit(
