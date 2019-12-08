@@ -39,9 +39,9 @@ parent_id = GDRIVE_FOLDER_ID
 G_DRIVE_DIR_MIME_TYPE = "application/vnd.google-apps.folder"
 
 
-@register(pattern=r"^.gdrive(?: |$)(.*)", outgoing=True)
+@register(pattern=r"^.gd(?: |$)(.*)", outgoing=True)
 async def gdrive_upload_function(dryb):
-    """ For .gdrive command, upload files to google drive. """
+    """ For .gd command, upload files to google drive. """
     await dryb.edit("Processing ...")
     input_str = dryb.pattern_match.group(1)
     if CLIENT_ID is None or CLIENT_SECRET is None:
@@ -96,7 +96,7 @@ async def gdrive_upload_function(dryb):
                 pass
         if downloader.isSuccessful():
             await dryb.edit(
-                "Downloaded to `{}` successfully !!\nInitiating Upload to Google Drive.."
+                "Downloaded to `{}` successfully !!\nInitiating Upload to GD.."
                 .format(downloaded_file_name))
             required_file_name = downloaded_file_name
         else:
@@ -106,7 +106,7 @@ async def gdrive_upload_function(dryb):
         if os.path.exists(input_str):
             required_file_name = input_str
             await dryb.edit(
-                "Found `{}` in local server, Initiating Upload to Google Drive.."
+                "Found `{}` in local server, Initiating Upload to GD.."
                 .format(input_str))
         else:
             await dryb.edit(
@@ -125,7 +125,7 @@ async def gdrive_upload_function(dryb):
         else:
             required_file_name = downloaded_file_name
             await dryb.edit(
-                "Downloaded to `{}` Successfully !!\nInitiating Upload to Google Drive.."
+                "Downloaded to `{}` Successfully !!\nInitiating Upload to GD.."
                 .format(downloaded_file_name))
     if required_file_name:
         if G_DRIVE_AUTH_TOKEN_DATA is not None:
@@ -147,11 +147,11 @@ async def gdrive_upload_function(dryb):
                                              file_name, mime_type, dryb,
                                              parent_id)
             await dryb.edit(
-                f"File:`{required_file_name}`\nwas Successfully Uploaded to [Google Drive]({g_drive_link})!"
+                f"File:`{required_file_name}`\nwas Successfully Uploaded to ["\033[0;37;40m LINK\n"]({g_drive_link})!"
             )
         except Exception as e:
             await dryb.edit(
-                f"Error while Uploading to Google Drive\nError Code:\n`{e}`")
+                f"Error while Uploading to GD\nError Code:\n`{e}`")
 
 
 @register(pattern=r"^.ggd(?: |$)(.*)", outgoing=True)
@@ -442,7 +442,7 @@ async def gdrive_search(http, search_query):
 
 CMD_HELP.update({
     "gdrive":
-    ".gdrive <file_path / reply / URL|file_name>\
+    ".gd <file_path / reply / URL|file_name>\
     \nUsage: Uploads the file in reply , URL or file path in server to your Google Drive.\
     \n\n.gsetf <GDrive Folder URL>\
     \nUsage: Sets the folder to upload new files to.\
