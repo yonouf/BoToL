@@ -9,9 +9,9 @@ from userbot import CMD_HELP
 from userbot.events import register
 
 
-@register(outgoing=True, pattern="^.help(?: |$)(.*)")
+@register(outgoing=True, pattern="^.h(?: |$)(.*)")
 async def help(event):
-    """ For .help command,"""
+    """ For .h command,"""
     args = event.pattern_match.group(1).lower()
     if args:
         if args in CMD_HELP:
@@ -20,7 +20,7 @@ async def help(event):
             await event.edit("Please specify a valid module name.")
     else:
         await event.edit("Please specify which module do you want help for !!\
-            \nUsage: .help <module name>")
+            \nUsage: .h <module name>")
         string = ""
         for i in CMD_HELP:
             string += "`" + str(i)
