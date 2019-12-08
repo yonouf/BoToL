@@ -199,7 +199,7 @@ WHERE = ["in the chest", "on the head", "on the butt", "on the crotch"]
 # ===========================================
 
 
-@register(pattern="^.slap(?: |$)(.*)", outgoing=True)
+@register(pattern="^.sl(?: |$)(.*)", outgoing=True)
 async def who(event):
     """ slaps a user, or get slapped if not a reply. """
     replied_user = await get_user_from_event(event)
