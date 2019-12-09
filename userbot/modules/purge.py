@@ -107,7 +107,7 @@ async def selfdestruct(destroy):
 
 
 CMD_HELP.update({
-    "chat":
+    "Chat":
     ".pu Purges all messages starting from the reply.\
 \n.pm Deletes x amount of your latest messages.\
 \n.d Deletes the message you replied to.\
