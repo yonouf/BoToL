@@ -137,7 +137,7 @@ CMD_HELP.update({
 \n.getpaste Gets the content of a paste or shortened url from dogbin (https://del.dog/)\    
 \n.rbg Removes the background of images.\
 \n.car <text> [or reply] Beautify your code using carbon.now.sh\
-\n.crblang <text> to set language for your code.\"
+\n.crblang <text> to set language for your code.\
 \n.ss <url> Takes a screenshot of a website and sends the screenshot.\
 \nExample of a valid URL : `https://www.google.com`"
 })
@@ -145,5 +145,6 @@ CMD_HELP.update({
 CMD_HELP.update({
     "UserBug":
     ".update | .git | .restart | .shutdown | .sleep |\
-    \n.oub | .community | .editor | .readme | .support."
+    \n.oub | .community | .editor | .readme | .support.\
+    \n.sysd | .botver | .pip | .on | .au | .res."
     })
