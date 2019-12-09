@@ -13,7 +13,7 @@ if LYDIA_API_KEY:
     api_client = coffeehouse.API(api_key)
 
 @register(outgoing=True, pattern="^.rp$")
-async def rp(event):
+async def repcf(event):
     if event.fwd_from:
         return
     await event.edit("Processing...")
@@ -28,7 +28,7 @@ async def rp(event):
         await event.edit(str(e))
 
 @register(outgoing=True, pattern="^.ac$")
-async def ac(event):
+async def addcf(event):
     if event.fwd_from:
         return
     await event.edit("Running on SQL mode for now...")
@@ -45,7 +45,7 @@ async def ac(event):
         await event.edit("Reply to a user to activate Lydia AI on them")
 
 @register(outgoing=True, pattern="^.rc$")
-async def rc(event):
+async def remcf(event):
     if event.fwd_from:
         return
     await event.edit("Running on SQL mode for now...")
