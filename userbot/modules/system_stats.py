@@ -123,8 +123,8 @@ async def pipcheck(pip):
 async def amireallyalive(on):
     """ For .on command, check if the bot is running.  """
     await on.edit("`"
-                     "What The F....K \n"
-                     "I'm Alive Dude \n"
+                     "Hello Boss \n"
+                     "I'm Still Here \n"
                      f"I'm on Telethon : {version.__version__} \n"
                      f"I'm on Python   : {python_version()} \n"
                      f"anything else ??? "
@@ -153,20 +153,4 @@ async def amireallyalivereset(ureset):
     await ureset.edit("`" "Successfully reset user for alive!" "`")
 
 
-CMD_HELP.update(
-    {"sysd": ".sysd\
-    \nUsage: Shows system information using neofetch."})
-CMD_HELP.update({"botver": ".botver\
-    \nUsage: Shows the userbot version."})
-CMD_HELP.update(
-    {"pip": ".pip <module(s)>\
-    \nUsage: Does a search of pip modules(s)."})
-CMD_HELP.update({
-    "on":
-    ".on\
-    \nUsage: Type .on to see wether your bot is working or not.\
-    \n\n.au <text>\
-    \nUsage: Changes the 'user' in alive to the text you want.\
-    \n\n.res\
-    \nUsage: Resets the user to default."
-})
+
