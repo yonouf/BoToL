@@ -133,8 +133,8 @@ CMD_HELP.update({
     "misc":
     ".raw Get detailed JSON-like formatted data about replied message.\
 \n.ocr <language> Reply to an image or sticker to extract text from it.\
-\n.paste <text/reply> Create a paste or a shortened url using dogbin (https://del.dog/)\
-\n.getpaste Gets the content of a paste or shortened url from dogbin (https://del.dog/)\    
+\n.paste <text/reply> Create a paste or a shortened url using dogbin.\
+\n.getpaste Gets the content of a paste or shortened url from dogbin\    
 \n.rbg Removes the background of images.\
 \n.car <text> [or reply] Beautify your code using carbon.now.sh\
 \n.crblang <text> to set language for your code.\
