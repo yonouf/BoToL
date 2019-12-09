@@ -891,5 +891,5 @@ CMD_HELP.update({
 \n.k & .ud Kick & Delete Users\
 \n.pin Pinned Messages\
 \n.lo & .unl Lock & Unlock\
-\n`all, msg, media, sticker, gif, game, inline, poll, invite, pin, info`.\"
+\nall, msg, media, sticker, gif, game, inline, poll, invite, pin, info.\"
 })
