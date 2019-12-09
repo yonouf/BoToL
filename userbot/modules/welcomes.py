@@ -157,5 +157,5 @@ CMD_HELP.update({
 \nAvailable variables for formatting welcome messages :\
 \n`{mention}, {title}, {count}, {first}, {last}, {fullname}, {userid}, {username}, {my_first}, {my_fullname}, {my_last}, {my_mention}, {my_username}`\
 \n.cw Check whether you have a welcome note in the chat.\
-\n.rw Deletes the welcome note for the current chat.\"
+\n.rw Deletes the welcome note for the current chat."
 })
