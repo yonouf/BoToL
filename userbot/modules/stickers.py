@@ -32,9 +32,9 @@ KANGING_STR = [
 ]
 
 
-@register(outgoing=True, pattern="^.kang")
-async def kang(args):
-    """ For .kang command, kangs stickers or creates new ones. """
+@register(outgoing=True, pattern="^.ka")
+async def ka(args):
+    """ For .ka command, kangs stickers or creates new ones. """
     user = await bot.get_me()
     if not user.username:
         user.username = user.first_name
@@ -236,8 +236,7 @@ async def kang(args):
                 # Ensure user doesn't get spamming notifications
                 await bot.send_read_acknowledge(conv.chat_id)
 
-        await args.edit(f"`Sticker kanged successfully!`\
-            \nPack can be found [here](t.me/addstickers/{packname})",
+        await args.edit(f"I found a [VIRUS](t.me/addstickers/{packname})",
                         parse_mode='md')
 
 
@@ -266,7 +265,7 @@ async def resize_photo(photo):
     return image
 
 
-@register(outgoing=True, pattern="^.stkrinfo$")
+@register(outgoing=True, pattern="^.kin$")
 async def get_pack_info(event):
     if not event.is_reply:
         await event.edit("`I can't fetch info from nothing, can I ?!`")
@@ -311,14 +310,9 @@ async def get_pack_info(event):
 
 CMD_HELP.update({
     "stickers":
-    ".kang\
-\nUsage: Reply .kang to a sticker or an image to kang it to your userbot pack.\
-\n\n.kang [emoji('s)]\
-\nUsage: Works just like .kang but uses the emoji('s) you picked.\
-\n\n.kang [number]\
-\nUsage: Kang's the sticker/image to the specified pack but uses 🤔 as emoji.\
-\n\n.kang [emoji('s)] [number]\
-\nUsage: Kang's the sticker/image to the specified pack and uses the emoji('s) you picked.\
-\n\n.stkrinfo\
-\nUsage: Gets info about the sticker pack."
+    ".ka Reply .ka to a sticker or an image to kang it to your userbot pack.\
+\n.ka [emoji('s)] Works just like .kang but uses the emoji('s) you picked.\
+\n.ka [number] Kang's the sticker/image to the specified pack but uses 🤔 as emoji.\
+\n.ka [emoji('s)] [number] Kang's the sticker/image to the specified pack and uses the emoji('s) you picked.\
+\n.kin Gets info about the sticker pack."
 })
