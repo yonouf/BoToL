@@ -10,7 +10,7 @@ from userbot import CMD_HELP
 from userbot.events import register
 
 
-@register(outgoing=True, pattern=r"^.lock ?(.*)")
+@register(outgoing=True, pattern=r"^.lo ?(.*)")
 async def locks(event):
     input_str = event.pattern_match.group(1).lower()
     peer_id = event.chat_id
@@ -98,7 +98,7 @@ async def locks(event):
         return
 
 
-@register(outgoing=True, pattern=r"^.unlock ?(.*)")
+@register(outgoing=True, pattern=r"^.unl ?(.*)")
 async def rem_locks(event):
     input_str = event.pattern_match.group(1).lower()
     peer_id = event.chat_id
@@ -186,11 +186,3 @@ async def rem_locks(event):
         return
 
 
-CMD_HELP.update({
-    "locks":
-    ".lock <all (or) type(s)> or .unlock <all (or) type(s)>\
-\nUsage: Allows you to lock/unlock some common message types in the chat.\
-[NOTE: Requires proper admin rights in the chat !!]\
-\n\nAvailable message types to lock/unlock are: \
-\n`all, msg, media, sticker, gif, game, inline, poll, invite, pin, info`"
-})
