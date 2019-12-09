@@ -131,15 +131,11 @@ async def raw(event):
 
 CMD_HELP.update({
     "misc":
-    ".raw\
-\nUsage: Get detailed JSON-like formatted data about replied message.\
-\n.ocr <language>\
-\nUsage: Reply to an image or sticker to extract text from it.\
-\nGet language codes from [here](https://ocr.space/ocrapi).\
-\n.paste <text/reply>\
-\nUsage: Create a paste or a shortened url using dogbin (https://del.dog/)\
-\n\n.getpaste\
-\nUsage: Gets the content of a paste or shortened url from dogbin (https://del.dog/)    
+    ".raw Get detailed JSON-like formatted data about replied message.\
+\n.ocr <language> Reply to an image or sticker to extract text from it.\
+\n.paste <text/reply> Create a paste or a shortened url using dogbin (https://del.dog/)\
+\n.getpaste Gets the content of a paste or shortened url from dogbin (https://del.dog/)\    
+\n.rbg Removes the background of images."\
 })
 
 CMD_HELP.update({
