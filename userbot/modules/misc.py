@@ -18,20 +18,6 @@ from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, bot
 from userbot.events import register
 
 
-@register(outgoing=True, pattern="^.ran")
-async def randomise(items):
-    """ For .ran command, get a random item from the list of items. """
-    itemo = (items.text[8:]).split()
-    if len(itemo) < 2:
-        await items.edit(
-            "`2 or more items are required! Check .help random for more info.`"
-        )
-        return
-    index = randint(1, len(itemo) - 1)
-    await items.edit("**Query: **\n`" + items.text[8:] + "`\n**Output: **\n`" +
-                     itemo[index] + "`")
-
-
 @register(outgoing=True, pattern="^.sleep( [0-9]+)?$")
 async def sleepybot(time):
     """ For .sleep command, let the userbot snooze for a few second. """
@@ -110,19 +96,6 @@ async def reedme(e):
     
 
 # Copyright (c) Gegham Zakaryan | 2019
-@register(outgoing=True, pattern="^.rep (.*)")
-async def repeat(rep):
-    cnt, txt = rep.pattern_match.group(1).split(' ', 1)
-    replyCount = int(cnt)
-    toBeRepeated = txt
-
-    replyText = toBeRepeated + "\n"
-
-    for i in range(0, replyCount - 1):
-        replyText += toBeRepeated + "\n"
-
-    await rep.edit(replyText)
-
 
 @register(outgoing=True, pattern="^.repo$")
 async def repo_is_here(wannasee):
@@ -158,20 +131,19 @@ async def raw(event):
 
 CMD_HELP.update({
     "misc":
-    ".ran <item1> <item2> ... <itemN>\
-\nUsage: Get a random item from the list of items.\
-\n.sleep <seconds>\
-\nUsage: Userbots get tired too. Let yours snooze for a few seconds.\
-\n.rep <no.> <text>\
-\nUsage: Repeats the text for a number of times. Don't confuse this with spam tho.\
-\n.raw\
+    ".raw\
 \nUsage: Get detailed JSON-like formatted data about replied message.\
 \n.ocr <language>\
-\nUsage: Reply to an image or sticker to extract text from it.\n\nGet language codes from [here](https://ocr.space/ocrapi)."
+\nUsage: Reply to an image or sticker to extract text from it.\
+\nGet language codes from [here](https://ocr.space/ocrapi).\
+\n.paste <text/reply>\
+\nUsage: Create a paste or a shortened url using dogbin (https://del.dog/)\
+\n\n.getpaste\
+\nUsage: Gets the content of a paste or shortened url from dogbin (https://del.dog/)    
 })
 
 CMD_HELP.update({
     "UserBug":
-    ".update | .git | .restart | .shutdown\
+    ".update | .git | .restart | .shutdown | .sleep |\
     \n.community | .editor | .readme | .support.\
     })
