@@ -18,9 +18,9 @@ from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, bot
 from userbot.events import register
 
 
-@register(outgoing=True, pattern="^.random")
+@register(outgoing=True, pattern="^.ran")
 async def randomise(items):
-    """ For .random command, get a random item from the list of items. """
+    """ For .ran command, get a random item from the list of items. """
     itemo = (items.text[8:]).split()
     if len(itemo) < 2:
         await items.edit(
@@ -91,9 +91,9 @@ async def bot_support(wannahelp):
         \nJoin the OpenUserBot Chat: @PPE_Support")
 
 
-@register(outgoing=True, pattern="^.creator$")
+@register(outgoing=True, pattern="^.editor$")
 async def creator(e):
-    await e.edit("[BL4CKID](https://t.me/Three_Cube_TeKnoways)")
+    await e.edit("Edited by [BL4CKID](https://t.me/BL4CK_ID)")
 
 
 @register(outgoing=True, pattern="^.readme$")
@@ -157,25 +157,21 @@ async def raw(event):
 
 
 CMD_HELP.update({
-    'random':
-    '.random <item1> <item2> ... <itemN>\
-\nUsage: Get a random item from the list of items.'
+    "misc":
+    ".ran <item1> <item2> ... <itemN>\
+\nUsage: Get a random item from the list of items.\
+\n.sleep <seconds>\
+\nUsage: Userbots get tired too. Let yours snooze for a few seconds.\
+\n.rep <no.> <text>\
+\nUsage: Repeats the text for a number of times. Don't confuse this with spam tho.\
+\n.raw\
+\nUsage: Get detailed JSON-like formatted data about replied message.\
+\n.ocr <language>\
+\nUsage: Reply to an image or sticker to extract text from it.\n\nGet language codes from [here](https://ocr.space/ocrapi)."
 })
 
 CMD_HELP.update({
-    'sleep':
-    '.sleep <seconds>\
-\nUsage: Userbots get tired too. Let yours snooze for a few seconds.'
-})
-
-CMD_HELP.update({
-    "repeat":
-    ".rep <no.> <text>\
-\nUsage: Repeats the text for a number of times. Don't confuse this with spam tho."
-})
-
-CMD_HELP.update({
-    "raw":
-    ".raw\
-\nUsage: Get detailed JSON-like formatted data about replied message."
-})
+    "UserBug":
+    ".update | .git | .restart | .shutdown\
+    \n.community | .editor | .readme | .support.\
+    })
