@@ -48,4 +48,3 @@ async def github(event):
                 await event.edit(REPLY)
 
 
-CMD_HELP.update({"git": "Like .whois but for GitHub usernames."})
