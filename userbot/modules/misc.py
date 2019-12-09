@@ -147,5 +147,5 @@ CMD_HELP.update({
     ".update | .git | .restart | .shutdown | .sleep |\
     \n.oub | .community | .editor | .readme | .support.\
     \n.sysd | .botver | .pip | .on | .au | .res | .who.\
-    \n .speed | .dc | .p."
+    \n .speed | .dc | .p"
     })
