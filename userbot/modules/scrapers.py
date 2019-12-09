@@ -544,9 +544,9 @@ async def youtube_search(query,
         return (nexttok, videos)
 
 
-@register(outgoing=True, pattern=r".rip(a|v) (.*)")
+@register(outgoing=True, pattern=r".ri(a|v) (.*)")
 async def download_video(v_url):
-    """ For .rip command, download media from YouTube and many other sites. """
+    """ For .ri command, download media from YouTube and many other sites. """
     url = v_url.pattern_match.group(2)
     type = v_url.pattern_match.group(1).lower()
 
@@ -687,45 +687,17 @@ def deEmojify(inputString):
 
 
 CMD_HELP.update({
-    'img':
-    '.i <search_query>\
-        \nUsage: Does an image search on Google and shows 5 images.'
-})
-CMD_HELP.update({
-    'currency':
-    '.cur <amount> <from> <to>\
-        \nUsage: Converts various currencies for you.'
-})
-CMD_HELP.update({
-    'carbon':
-    '.car <text> [or reply]\
-        \nUsage: Beautify your code using carbon.now.sh\nUse .crblang <text> to set language for your code.'
-})
-CMD_HELP.update(
-    {'google': '.g <query>\
-        \nUsage: Does a search on Google.'})
-CMD_HELP.update(
-    {'wiki': '.wi <query>\
-        \nUsage: Does a search on Wikipedia.'})
-CMD_HELP.update(
-    {'ud': '.ud <query>\
-        \nUsage: Does a search on Urban Dictionary.'})
-CMD_HELP.update({
-    'tts':
-    '.tt <text> [or reply]\
-        \nUsage: Translates text to speech for the language which is set.\nUse .lang tts <language code> to set language for tts. (Default is English.)'
-})
-CMD_HELP.update({
-    'trt':
-    '.tr <text> [or reply]\
-        \nUsage: Translates text to the language which is set.\nUse .lang trt <language code> to set language for trt. (Default is English)'
-})
-CMD_HELP.update({'yt': '.yt <text>\
-        \nUsage: Does a YouTube search.'})
-CMD_HELP.update(
-    {"imdb": ".im <movie-name>\nShows movie info and other stuff."})
-CMD_HELP.update({
-    'rip':
-    '.ripa <url> or ripv <url>\
-        \nUsage: Download videos and songs from YouTube (and [many other sites](https://ytdl-org.github.io/youtube-dl/supportedsites.html)).'
+    "Google":
+    ".i Image search on Google and shows 5 images.\
+\n.cur <amount> <from> <to> Converts various currencies for you.\
+\n.g Does a search on Google.\
+\n.wi <query> Does a search on Wikipedia.\
+\n.ud <query> Does a search on Urban Dictionary.\
+\n.tt <text> [or reply] Translates text to speech for the language which is set.\
+\n.lang tts <language code> to set language for tts.\
+\n.tr <text> [or reply] Translates text to the language which is set.\
+\n.lang trt <language code> to set language for trt.\
+\n.yt <text> Does a YouTube search.\
+\n.im <movie-name> Shows movie info on IMDB.\
+\n.ria or .riv Download audio or video songs.\
 })
