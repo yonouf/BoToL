@@ -407,6 +407,17 @@ CMD_HELP.update({
     "download":
     ".down <link|filename> or reply to media\
 \nUsage: Downloads file to the server.\
-\n\n.up <path in server>\
-\nUsage: Uploads a locally stored file to the chat."
+\n.up <path in server>\
+\nUsage: Uploads a locally stored file to the chat.\
+\n.direct <url> Reply to a link or paste a URL to generate a direct download link.\
+\nList of supported URLs:\
+\nGoogle Drive - MEGA.nz - Cloud Mail - Yandex.Disk - AFH\
+\nZippyShare - MediaFire - SourceForge - OSDN - GitHub.\
+\n.aurl [URL] .amag [Magnet Link] .ator [path to torrent file]\
+\nDownloads the file into your userbot server storage.\
+\n.apause (or) .aresume Pauses/resumes on-going downloads.\
+\n.aclear Clears the download queue, deleting all on-going downloads.\
+\n.ashow Shows progress of the on-going downloads."
 })
+
+
