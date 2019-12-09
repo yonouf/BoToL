@@ -699,5 +699,5 @@ CMD_HELP.update({
 \n.lang trt <language code> to set language for trt.\
 \n.yt <text> Does a YouTube search.\
 \n.im <movie-name> Shows movie info on IMDB.\
-\n.ria or .riv Download audio or video songs.\
+\n.ria or .riv Download audio or video songs."
 })
