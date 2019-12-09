@@ -12,8 +12,8 @@ if LYDIA_API_KEY:
     api_key = LYDIA_API_KEY
     api_client = coffeehouse.API(api_key)
 
-@register(outgoing=True, pattern="^.repcf$")
-async def repcf(event):
+@register(outgoing=True, pattern="^.rp$")
+async def rp(event):
     if event.fwd_from:
         return
     await event.edit("Processing...")
@@ -27,8 +27,8 @@ async def repcf(event):
     except Exception as e:
         await event.edit(str(e))
 
-@register(outgoing=True, pattern="^.addcf$")
-async def addcf(event):
+@register(outgoing=True, pattern="^.ac$")
+async def ac(event):
     if event.fwd_from:
         return
     await event.edit("Running on SQL mode for now...")
@@ -44,8 +44,8 @@ async def addcf(event):
     else:
         await event.edit("Reply to a user to activate Lydia AI on them")
 
-@register(outgoing=True, pattern="^.remcf$")
-async def remcf(event):
+@register(outgoing=True, pattern="^.rc$")
+async def rc(event):
     if event.fwd_from:
         return
     await event.edit("Running on SQL mode for now...")
@@ -77,12 +77,4 @@ async def user(event):
         return
 
     
-"""CMD_HELP.update({
-    "Lydia":
-    ".addcf <username/reply>\
-\nUsage: add's lydia auto chat request in the chat.\
-\n\n.remcf <username/reply>\
-\nUsage: remove's lydia auto chat request in the chat.\
-\n\n.repcf <username/reply>\
-\nUsage: starts lydia repling to perticular person in the chat."
-})"""
+
