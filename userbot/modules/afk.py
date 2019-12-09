@@ -130,6 +130,36 @@ async def set_afk(afk_e):
     raise StopPropagation
 
 
+@register(outgoing=True)
+async def type_afk_is_not_true(notafk):
+    """ This sets your status as not afk automatically when you write something while being afk """
+    global ISAFK
+    global COUNT_MSG
+    global USERS
+    global AFKREASON
+    if ISAFK:
+        ISAFK = False
+        await notafk.respond("...")
+        await sleep(2)
+        if BOTLOG:
+            await notafk.client.send_message(
+                BOTLOG_CHATID,
+                "You've recieved " + str(COUNT_MSG) + " messages from " +
+                str(len(USERS)) + " chats while you were away",
+            )
+            for i in USERS:
+                name = await notafk.client.get_entity(i)
+                name0 = str(name.first_name)
+                await notafk.client.send_message(
+                    BOTLOG_CHATID,
+                    "[" + name0 + "](tg://user?id=" + str(i) + ")" +
+                    " sent you " + "`" + str(USERS[i]) + " messages`",
+                )
+        COUNT_MSG = 0
+        USERS = {}
+        AFKREASON = None
+
+
 
 CMD_HELP.update({
     "afk":
