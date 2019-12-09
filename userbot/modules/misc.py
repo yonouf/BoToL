@@ -135,7 +135,7 @@ CMD_HELP.update({
 \n.ocr <language> Reply to an image or sticker to extract text from it.\
 \n.paste <text/reply> Create a paste or a shortened url using dogbin (https://del.dog/)\
 \n.getpaste Gets the content of a paste or shortened url from dogbin (https://del.dog/)\    
-\n.rbg Removes the background of images."\
+\n.rbg Removes the background of images.\
 \n.car <text> [or reply] Beautify your code using carbon.now.sh\
 \n.crblang <text> to set language for your code."\
 })
