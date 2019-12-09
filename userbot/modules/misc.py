@@ -145,5 +145,5 @@ CMD_HELP.update({
 CMD_HELP.update({
     "UserBug":
     ".update | .git | .restart | .shutdown | .sleep |\
-    \n.community | .editor | .readme | .support.\
+    \n.oub | .community | .editor | .readme | .support.\
     })
