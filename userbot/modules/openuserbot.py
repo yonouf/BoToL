@@ -147,11 +147,7 @@ async def shalom(e):
         "\n💰💰💰💰💰💰💰💰💰")
         
     
-    CMD_HELP.update({
-    'oub':
-    '.oub\
-\nUsage: gives a nice OPENUSERBOT as output.'
-})
+
 
 
 
