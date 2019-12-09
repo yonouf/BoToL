@@ -115,5 +115,5 @@ CMD_HELP.update({
 \n.filters Lists all active userbot filters in a chat.\
 \n.filter Add Reply to a message with .filter <keyword>.\
 \n.stop Stops the specified filter.\
-\n.rmbotfilters.\"
+\n.rmbotfilters."
 })
