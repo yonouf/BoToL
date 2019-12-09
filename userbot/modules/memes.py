@@ -310,15 +310,4 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "memes":
-    ".Oof\
-\nUsage: Ooooof\
-\n\n.hi\
-\nUsage: Greet everyone!\
-\n\n.sl\
-\nUsage: reply to slap them with random objects !!\
-\n\n.f <emoji/character>\
-\nUsage: Pay Respects.\
-\n\n.tp\
-\nUsage: Just a small command to make your keyboard become a typewriter!\
-\n\n.ly <query>\
-\nUsage: Let me Google that for you real quick !!\."})
+    ".Oof | .hi | .sl | .f | .tp | .ly\"})
