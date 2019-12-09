@@ -288,5 +288,5 @@ CMD_HELP.update({
 \n.noon Allows notifications for unapproved PMs.\
 \n.ac add's lydia auto chat request in the chat.\
 \n.rc remove's lydia auto chat request in the chat.\
-\n.rp starts lydia repling to perticular person in the chat.\"
+\n.rp lydia repling to perticular person in the chat."
 })
