@@ -880,7 +880,7 @@ async def get_userdel_from_id(user, event):
   
 
 CMD_HELP.update({
-    "admin":
+    "Admin":
     ".ads & .us Get list of Admins or Users\
 \n.gm & .ugm Mute & Unmute Global\
 \n.zo Search & Clean Deleted Account\
