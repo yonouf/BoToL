@@ -881,7 +881,7 @@ async def get_userdel_from_id(user, event):
 
 CMD_HELP.update({
     "admin":
-    ".pro & .dem Promote & Demote\
+    "`.pro & .dem Promote & Demote\
 \n.gm & .ugm Mute & Unmute Global\
 \n.b & .ub Banned & Unbanned\
 \n.m & .um Mute & Unmute\
@@ -891,5 +891,5 @@ CMD_HELP.update({
 \n.k & .ud Kick & Delete Users\
 \n.pin Pinned Messages\
 \n.lo & .unl Lock & Unlock\
-\n`all, msg, media, sticker, gif, game, inline, poll, invite, pin, info.`"
+\nall, msg, media, sticker, gif, game, inline, poll, invite, pin, info.`"
 })
