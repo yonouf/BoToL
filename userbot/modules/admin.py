@@ -881,15 +881,15 @@ async def get_userdel_from_id(user, event):
 
 CMD_HELP.update({
     "admin":
-    "`.pro & .dem Promote & Demote\
+    ".ads & .us Get list of Admins or Users\
 \n.gm & .ugm Mute & Unmute Global\
-\n.b & .ub Banned & Unbanned\
-\n.m & .um Mute & Unmute\
-\n.ads & .us Get list of Admins or Users\
-\n.gp Changes the Group's DP\
 \n.zo Search & Clean Deleted Account\
+\n.b & .ub Banned & Unbanned\
 \n.k & .ud Kick & Delete Users\
+\n.pro & .dem Promote & Demote\
+\n.gp Changes the Group's DP\
+\n.m & .um Mute & Unmute\
 \n.pin Pinned Messages\
-\n.lo & .unl Lock & Unlock\
-\nall, msg, media, sticker, gif, game, inline, poll, invite, pin, info.`"
+\n.lo & .unl Lock & Unlock all, msg, media, sticker,\
+\ngif, game, inline, poll, invite, pin, info."
 })
