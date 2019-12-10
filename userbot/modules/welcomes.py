@@ -151,7 +151,7 @@ async def del_welcome(event):
 
 
 CMD_HELP.update({
-    "Welcome":
+    "welcome":
     ".rw Deletes the welcome note for the current chat.\
 \n.cw Check whether you have a welcome note in the chat.\
 \n.sw <welcome message> or reply to a message with .setwelcome\
