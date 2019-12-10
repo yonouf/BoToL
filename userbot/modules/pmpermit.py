@@ -279,7 +279,7 @@ async def unblockpm(unblock):
 
 
 CMD_HELP.update({
-    "Pmp":
+    "pmp":
     ".noff Clears/Disables any notifications of unapproved PMs.\
 \n.app Approves the mentioned/replied person to PM.\
 \n.dis Disapproves the mentioned/replied person to PM.\
