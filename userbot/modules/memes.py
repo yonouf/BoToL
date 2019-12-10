@@ -310,5 +310,5 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "Memes":
-    ".Oof | .hi | .sl | .f | .tp | .ly."
+    ".Oof | .hi | .sl | .f | .tp | .ly"
     })
