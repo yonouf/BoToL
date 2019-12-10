@@ -130,7 +130,7 @@ async def raw(event):
 
 
 CMD_HELP.update({
-    "Misc":
+    "misc":
     ".raw Get detailed JSON-like formatted data about replied message.\
 \n.ocr <language> Reply to an image or sticker to extract text from it.\
 \n.paste <text/reply> Create a paste or a shortened url using dogbin.\
@@ -145,7 +145,7 @@ CMD_HELP.update({
 CMD_HELP.update({
     "userbug":
     ".update | .git | .restart | .shutdown | .sleep |\
-    \n.oub | .community | .editor | .readme | .support\
-    \n.sysd | .botver | .pip | .on | .au | .res | .who\
-    \n .speed | .dc | .p"
+    \n.oub | .community | .editor | .readme | .support |\
+    \n.sysd | .botver | .pip | .on | .au | .res | .who|\
+    \n.speed | .dc | .p"
     })
