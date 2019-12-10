@@ -687,7 +687,7 @@ def deEmojify(inputString):
 
 
 CMD_HELP.update({
-    "Google":
+    "google":
     ".i Image search on Google and shows 5 images.\
 \n.cur <amount> <from> <to> Converts various currencies for you.\
 \n.g Does a search on Google.\
