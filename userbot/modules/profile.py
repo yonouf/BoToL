@@ -179,7 +179,7 @@ async def remove_profilepic(delpfp):
 
 
 CMD_HELP.update({
-    "profile":
+    "Profile":
     ".setpfp Reply with an image to change your Telegram profie picture.\
 \n.delpfp Deletes your Telegram profile picture.\
 \n.reserved Shows usernames reserved by you.\
