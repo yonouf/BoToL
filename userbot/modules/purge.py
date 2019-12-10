@@ -107,13 +107,13 @@ async def selfdestruct(destroy):
 
 
 CMD_HELP.update({
-    "Chat":
-    ".pu Purges all messages starting from the reply.\
+    "Chats":
+    ".d Deletes the message you replied to.\
 \n.pm Deletes x amount of your latest messages.\
-\n.d Deletes the message you replied to.\
+\n.pu Purges all messages starting from the reply.\
 \n.sd Creates a message that selfdestructs in x seconds.\
-\n.filters Lists all active userbot filters in a chat.\
 \n.filter Add Reply to a message with .filter <keyword>.\
+\n.filters Lists all active userbot filters in a chat.\
 \n.stop Stops the specified filter.\
 \n.rmbotfilters."
 })
