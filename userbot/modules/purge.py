@@ -47,9 +47,9 @@ async def fastpurger(purg):
     await done.delete()
 
 
-@register(outgoing=True, pattern="^.pm")
+@register(outgoing=True, pattern="^.pum")
 async def purgeme(delme):
-    """ For .pm, delete x count of your latest message."""
+    """ For .pum, delete x count of your latest message."""
     message = delme.text
     count = int(message[9:])
     i = 1
@@ -109,7 +109,7 @@ async def selfdestruct(destroy):
 CMD_HELP.update({
     "chats":
     ".d Deletes the message you replied to.\
-\n.pm Deletes x amount of your latest messages.\
+\n.pum Deletes x amount of your latest messages.\
 \n.pu Purges all messages starting from the reply.\
 \n.sd Creates a message that selfdestructs in x seconds.\
 \n.filter Add Reply to a message with .filter <keyword>.\
