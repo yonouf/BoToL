@@ -143,7 +143,7 @@ CMD_HELP.update({
 })
 
 CMD_HELP.update({
-    "Userbug":
+    "userbug":
     ".update | .git | .restart | .shutdown | .sleep |\
     \n.oub | .community | .editor | .readme | .support\
     \n.sysd | .botver | .pip | .on | .au | .res | .who\
