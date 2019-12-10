@@ -688,16 +688,17 @@ def deEmojify(inputString):
 
 CMD_HELP.update({
     "google":
-    ".i Image search on Google and shows 5 images.\
-\n.cur <amount> <from> <to> Converts various currencies for you.\
-\n.g Does a search on Google.\
-\n.wi <query> Does a search on Wikipedia.\
-\n.ud <query> Does a search on Urban Dictionary.\
-\n.tt <text> [or reply] Translates text to speech for the language which is set.\
-\n.lang tts <language code> to set language for tts.\
-\n.tr <text> [or reply] Translates text to the language which is set.\
-\n.lang trt <language code> to set language for trt.\
+    "\
+.g Does a search on Google.\
 \n.yt <text> Does a YouTube search.\
+\n.wi <query> Does a search on Wikipedia.\
 \n.im <movie-name> Shows movie info on IMDB.\
-\n.ria or .riv Download audio or video songs."
+\n.ria or .riv Download audio or video songs.\
+\n.i Image search on Google and shows 5 images.\
+\n.ud <query> Does a search on Urban Dictionary.\
+\n.lang tts <language code> to set language for tts.\
+\n.lang trt <language code> to set language for trt.\
+\n.cur <amount> <from> <to> Converts various currencies for you.\
+\n.tr <text> [or reply] Translates text to the language which is set.\
+\n.tt <text> [or reply] Translates text to speech for the language which is set."
 })
