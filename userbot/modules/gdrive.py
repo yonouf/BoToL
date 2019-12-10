@@ -441,7 +441,7 @@ async def gdrive_search(http, search_query):
 
 
 CMD_HELP.update({
-    "Gdrive":
+    "gdrive":
     ".gd <file_path / reply / URL|file_name>\
     \nUsage: Uploads the file in reply , URL or file path in server to your Google Drive.\
     \n.gsetf <GDrive Folder URL>\
