@@ -405,19 +405,16 @@ async def uploadas(uas_event):
 
 CMD_HELP.update({
     "download":
-    ".down <link|filename> or reply to media\
-\nUsage: Downloads file to the server.\
-\n.up <path in server>\
-\nUsage: Uploads a locally stored file to the chat.\
-\n.direct <url> Reply to a link or paste a URL to generate a direct download link.\
+    ".direct <url> Generate a direct download link.\
 \nList of supported URLs:\
-\nGoogle Drive - MEGA.nz - Cloud Mail - Yandex.Disk - AFH\
-\nZippyShare - MediaFire - SourceForge - OSDN - GitHub.\
-\n.aurl [URL] .amag [Magnet Link] .ator [path to torrent file]\
-\nDownloads the file into your userbot server storage.\
+\nGoogle Drive | MEGA.nz | Cloud Mail | Yandex.Disk | AFH\
+\nZippyShare | MediaFire | SourceForge | OSDN | GitHub.\
+\n.aurl [URL]\
+\n.amag [Magnet Link]\
+\n.ator [path to torrent file]\
+\n.aclear Clears the download.\
+\n.down <link|filename> or reply to media.\
+\n.ashow Shows progress of the on-going downloads.\
 \n.apause (or) .aresume Pauses/resumes on-going downloads.\
-\n.aclear Clears the download queue, deleting all on-going downloads.\
-\n.ashow Shows progress of the on-going downloads."
+\n.up <path in server> Uploads a locally stored file to the chat."
 })
-
-
