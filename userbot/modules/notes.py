@@ -145,7 +145,7 @@ async def kick_marie_notes(kick):
 
 
 CMD_HELP.update({
-    "Notes":
+    "notes":
     "\
 #<notename>\
 \nUsage: Gets the specified note.\
