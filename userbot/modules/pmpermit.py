@@ -279,13 +279,14 @@ async def unblockpm(unblock):
 
 
 CMD_HELP.update({
-    "pmp":
-    "\.app Approves the mentioned/replied person to PM.\
+    "Pmp":
+    ".noff Clears/Disables any notifications of unapproved PMs.\
+\n.app Approves the mentioned/replied person to PM.\
 \n.dis Disapproves the mentioned/replied person to PM.\
-\n.bl Blocks the person.\
-\n.un Unblocks the person so they can PM you.\
-\n.noff Clears/Disables any notifications of unapproved PMs.\
 \n.noon Allows notifications for unapproved PMs.\
+\n.un Unblocks the person so they can PM you.\
+\n.bl Blocks the person.\
+\n\nLydia\
 \n.ac add's lydia auto chat request in the chat.\
 \n.rc remove's lydia auto chat request in the chat.\
 \n.rp lydia repling to perticular person in the chat."
