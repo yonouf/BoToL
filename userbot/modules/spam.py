@@ -78,11 +78,11 @@ async def spammer(e):
 
 
 CMD_HELP.update({
-    "spam":
-    ".cs <text> Spam the text letter by letter.\
+    "Spam":
+    ".psp <count> <link to image/gif> As if text spam was not enough !!\
 \n.sp <count> <text> Floods text in the chat !!\
+\n.cs <text> Spam the text letter by letter.\
 \n.wsp <text> Spam the text word by word.\
-\n.psp <count> <link to image/gif> As if text spam was not enough !!\
-\n.dsp <delay> <count> <text>\
-\n.bigspam but with custom delay."
+\n.bigspam but with custom delay.\
+\n.dsp <delay> <count> <text>."
 })
