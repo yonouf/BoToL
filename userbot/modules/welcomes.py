@@ -151,11 +151,12 @@ async def del_welcome(event):
 
 
 CMD_HELP.update({
-    "welcome":
-    ".sw <welcome message> or reply to a message with .setwelcome\
+    "Welcome":
+    ".rw Deletes the welcome note for the current chat.\
+\n.cw Check whether you have a welcome note in the chat.\
+\n.sw <welcome message> or reply to a message with .setwelcome\
 \nUsage: Saves the message as a welcome note in the chat.\
 \nAvailable variables for formatting welcome messages :\
-\n`{mention}, {title}, {count}, {first}, {last}, {fullname}, {userid}, {username}, {my_first}, {my_fullname}, {my_last}, {my_mention}, {my_username}`\
-\n.cw Check whether you have a welcome note in the chat.\
-\n.rw Deletes the welcome note for the current chat."
+\n{title}, {count}, {first}, {mention}, {fullname}, {userid}, {username},\
+\n{my_first}, {last}, {my_fullname}, {my_last}, {my_mention}, {my_username}."
 })
