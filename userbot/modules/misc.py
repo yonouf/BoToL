@@ -130,22 +130,22 @@ async def raw(event):
 
 
 CMD_HELP.update({
-    "misc":
+    "Misc":
     ".raw Get detailed JSON-like formatted data about replied message.\
 \n.ocr <language> Reply to an image or sticker to extract text from it.\
 \n.paste <text/reply> Create a paste or a shortened url using dogbin.\
 \n.gp Gets the content of a paste or shortened url from dogbin.\
-\n.rbg Removes the background of images.\
-\n.car <text> [or reply] Beautify your code using carbon.now.sh\
-\n.crblang <text> to set language for your code.\
 \n.ss <url> Takes a screenshot of a website and sends the screenshot.\
-\nExample of a valid URL : `https://www.google.com`"
+\nExample of a valid URL : `https://www.google.com`.\
+\n.car <text> [or reply] Beautify your code using carbon.now.sh.\
+\n.crblang <text> to set language for your code.\
+\n.rbg Removes the background of images."
 })
 
 CMD_HELP.update({
-    "UserBug":
+    "Userbug":
     ".update | .git | .restart | .shutdown | .sleep |\
-    \n.oub | .community | .editor | .readme | .support.\
-    \n.sysd | .botver | .pip | .on | .au | .res | .who.\
+    \n.oub | .community | .editor | .readme | .support\
+    \n.sysd | .botver | .pip | .on | .au | .res | .who\
     \n .speed | .dc | .p"
     })
