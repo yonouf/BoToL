@@ -404,7 +404,7 @@ async def uploadas(uas_event):
 
 
 CMD_HELP.update({
-    "download":
+    "Download":
     ".direct <url> Generate a direct download link.\
 \nList of supported URLs:\
 \nGoogle Drive | MEGA.nz | Cloud Mail | Yandex.Disk | AFH\
