@@ -78,7 +78,7 @@ async def spammer(e):
 
 
 CMD_HELP.update({
-    "Spam":
+    "spam":
     ".psp <count> <link to image/gif> As if text spam was not enough !!\
 \n.sp <count> <text> Floods text in the chat !!\
 \n.cs <text> Spam the text letter by letter.\
