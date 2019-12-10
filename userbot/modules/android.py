@@ -187,6 +187,6 @@ async def twrp(request):
 
 
 CMD_HELP.update({
-    "Android":
+    "android":
     ".magisk | .device | .codename | .specs | .twrp"
 })
